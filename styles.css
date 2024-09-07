@@ -350,10 +350,12 @@
 
     }
     .SearchDiv input::placeholder {
+     
         color: var(--lm-text);
         font-weight: bold;
         font-size: small;
         letter-spacing: 0.01em;
+        width: 152px;
 
     }
     .maindiv {
