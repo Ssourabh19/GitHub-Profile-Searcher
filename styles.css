@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+:root {
+    --lm-text: #4b6a9b;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Space Mono", " monospace";
+
+
+}
+
+.lightUi {
+    display: none;
+}
+
+.lightUi.active {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    cursor: pointer;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.DarkUi {
+    display: none;
+}
+
+.DarkUi.active {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    cursor: pointer;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.all-content {
+    max-width: 800px;
+    margin: auto;
+
+}
+
+.Contentbox {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.heading1 {
+    color: #4B6A9B;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.ContentBox2 {
+
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    /* background-color: #1E2A47; */
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 20px gray;
+}
+
+
+.SearchDiv input {
+    all: unset;
+    width: 260px;
+
+
+}
+
+.SearchDiv input::placeholder {
+    color: var(--lm-text);
+    font-weight: bold;
+
+}
+
+
+.fa-magnifying-glass {
+    color: #0079ff;
+    scale: 130%;
+}
+
+.SearchBtn {
+    all: unset;
+    background-color: #0079ff;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+
+
+}
+
+.SearchBtn:hover {
+    background-color: #60abff;
+}
+
+.usernameProfile {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+
+}
+
+.usernameProfile img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+.maindiv {
+
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px gray;
+
+
+}
+
+[dataUsename] {
+    color: black;
+    font: bold;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+[dataUsernameLink] {
+    color: #0079ff;
+}
+
+[userJoined] {
+    color: #4B6A9B;
+}
+
+[dataBio] {
+    color: #4B6A9B;
+}
+
+.RepoFollower {
+    display: flex;
+    max-width: 350px;
+
+    padding: 22px;
+    gap: 30px;
+    background-color: #F6F8FF;
+    color: #4B6A9B;
+    margin: 20px auto;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.RepoFollower2 {
+    display: flex;
+    max-width: 350px;
+
+    padding: 22px;
+    gap: 30px;
+    background-color: #141D2F;
+    margin: 20px auto;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.parameter {
+    display: flex;
+    flex-direction: column;
+}
+
+.parameter1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.parameter2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.parameter :last-of-type {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.parameter1 :last-of-type {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+.parameter2 :last-of-type {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+.parameter3 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+
+.OtherInfo {
+    display: flex;
+    gap: 20px;
+
+}
+
+.OtherInfo2 {
+    display: flex;
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+.OtherInfoPara {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+
+}
+
+.OtherInfoPara2 {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.OtherInfo3 {
+    color: white;
+}
+
+.databio2 {
+    color: grey;
+    font-weight: 600;
+}
+
+.userDetailsNotPresent {
+    display: none;
+
+}
+
+.error {
+    display: none;
+}
+
+.error.active {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 550px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.error img {
+    width: 200px;
+}
+
+.error p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media (max-width:600px) {
+    .SearchDiv input {
+        all: unset;
+        width: 160px;
+
+
+    }
+
+    .OtherInfo {
+        display: flex;
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .OtherInfo2 {
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .OtherInfoPara {
+        display: flex;
+        gap: 4px;
+
+
+
+    }
+
+    .OtherInfoPara2 {
+        display: flex;
+        gap: 4px;
+        margin-left: 3px;
+    }
+
+    [dataProfile] {
+        margin: 0 auto;
+    }
+
+    .UsernameSection {
+        margin: 0 auto;
+        text-align: center;
+    }
+    [dataBio] {
+        font-size: 0.9rem;
+        width: 310px;
+        margin-top: 9px;
+        text-align: start;
+        margin: 0 auto;
+
+    }
+    .SearchDiv input::placeholder {
+        color: var(--lm-text);
+        font-weight: bold;
+        font-size: small;
+        letter-spacing: 0.01em;
+
+    }
+    .maindiv {
+        padding: 10px;
+    }
+}

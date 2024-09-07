@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Searcher</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="all-content">
+            <div class="Contentbox">
+                <h1 class="heading1">GitHub Profile Searcher</h1>
+                <div class="lightUi">
+                    <p>Light</p>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+                <div class="DarkUi">
+                    <p>Dark</p>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+            <div class="ContentBox2">
+                <div class="SearchDiv">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="" class="myPlace" placeholder="" dataSearchUser>
+                    
+                </div>
+                <button class="SearchBtn">Search</button>
+            </div>
+           
+            <div class="error">
+                <img src="./assests/not-found.png" alt="">
+                <p class="ColorChange">User Not Found</p>
+            </div>
+            <div class="maindiv">
+               
+                  
+                
+                <div class="usernameProfile">
+                    <img src="" alt="" dataProfile class="userimage">
+           
+                      
+                    
+                    <div class="UsernameSection">
+                        <p dataUsename class="datauser"></p>
+                        <a href="" dataUsernameLink></a>
+                        <p userJoined></p>
+                    </div>
+                    </div>
+                    <div>
+                    <p dataBio></p>
+                    <div class="RepoFollower">
+                        <div class="parameter">
+                            <p>Repos</p>
+                            <p dataRepo class="Repo"></p>
+                        </div>
+                        <div class="parameter1">
+                            <p>Follower</p>
+                            <p dataFollower class="Follower"></p>
+                        </div>
+                        <div class="parameter2">
+                            <p>Following</p>
+                            <p dataFollowing class="Following"></p>
+                        </div>
+                    </div>
+                    <div class="OtherInfo">
+                        <div class="OtherInfoPara">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p dataLocation></p>
+                        </div>
+                        <div class="OtherInfoPara">
+                            <i class="fa-solid fa-link"></i>
+                            <a href="" dataLinks></a>
+                        </div>
+                    </div>
+                    <div class="OtherInfo2">
+                        <div class="OtherInfoPara2">
+                            <i class="fa-brands fa-twitter"></i>
+                            <a href=" " dataTwitter ></a>
+                        </div>
+                        <div class="OtherInfoPara2">
+                            <i class="fa-regular fa-building"></i>
+                            <p dataofficeInfo></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
